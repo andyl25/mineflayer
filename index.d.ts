@@ -163,7 +163,7 @@ export interface BotEvents {
   bossBarUpdated: (bossBar: BossBar) => Promise<void> | void
   resourcePack: (url: string, hash?: string, uuid?: string) => Promise<void> | void
   particle: (particle: Particle) => Promise<void> | void
-  switchWorld: () => void
+  
 }
 
 export interface CommandBlockOptions {
@@ -479,7 +479,7 @@ export type LevelType =
   | 'buffet'
   | 'default_1_1'
 export type GameMode = 'survival' | 'creative' | 'adventure' | 'spectator'
-export type Dimension = 'the_nether' | 'overworld' | 'the_end' | 'world2'
+export type Dimension = string
 export type Difficulty = 'peaceful' | 'easy' | 'normal' | 'hard'
 
 export interface Player {
